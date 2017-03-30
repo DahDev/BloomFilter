@@ -149,17 +149,17 @@ public class EnhancedDoubleHashBloomFilter<E> extends AbstractBloomFilter<E> {
      */
     @Override
     protected int[] createHashes(byte[] bytes, int numberOfHash) {
-        long valueA, valueB;
+        int valueA, valueB;
         int[] hashes = new int[numberOfHash];
 
         valueA = getValueFromGeneratedHash(bytes, firstHash);
         valueB = getValueFromGeneratedHash(bytes, secondHash);
 
-        hashes[0] = (int) valueA;
+        hashes[0] = valueA;
         for (int i = 0; i < numberOfHash; i++) {
             valueA = (valueA + valueB) % size;
             valueB = (valueB + i) % size;
-            hashes[i] = (int) valueA;
+            hashes[i] = valueA;
         }
         return hashes;
     }

@@ -284,13 +284,13 @@ public abstract class AbstractBloomFilter<E> implements BloomFilter<E> {
      *
      * @param data         data to hash.
      * @param hashFunction hash function.
-     * @return long value from hash.
+     * @return int value from hash.
      */
-    long getValueFromGeneratedHash(byte[] data, MessageDigest hashFunction) {
+    int getValueFromGeneratedHash(byte[] data, MessageDigest hashFunction) {
         byte[] resultHashFunction;
         hashFunction.update(data);
         resultHashFunction = hashFunction.digest();
-        return new BigInteger(resultHashFunction).mod(BigInteger.valueOf(size)).longValue();
+        return Math.abs(new BigInteger(resultHashFunction).mod(BigInteger.valueOf(size)).intValue());
     }
 
     @Override
