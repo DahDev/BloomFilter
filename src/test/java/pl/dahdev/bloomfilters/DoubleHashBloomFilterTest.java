@@ -33,7 +33,7 @@ public class DoubleHashBloomFilterTest {
     private static final double PROBABILITY_OF_FALSE_POSITIVES = 0.001;
     private static final int EXPECTED_NUMBER_OF_ELEMENTS = 10;
     private static final int SIZE_OF_BLOOM_FILTER = 100;
-    private static final double EPSILON = 0.01;
+    private static final double EPSILON = 0.001;
     private static final String FIRST_ELEMENT = "First element";
     private static final String SECOND_ELEMENT = "Second element";
     private static final String THIRD_ELEMENT = "Third element";

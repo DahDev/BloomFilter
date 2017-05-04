@@ -276,7 +276,7 @@ public abstract class AbstractBloomFilter<E> implements BloomFilter<E> {
      * @return number of hash functions.
      */
     public int getNumberOfHash() {
-        return this.numberOfElements;
+        return this.numberOfHash;
     }
 
     /**
