@@ -1,18 +1,18 @@
 /**
  * MIT License
- * <p/>
+ *
  * Copyright (c) 2017 Damian Stygar
- * <p/>
+ *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
  * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
- * <p/>
+ *
  * The above copyright notice and this permission notice shall be included in all
  * copies or substantial portions of the Software.
- * <p/>
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -31,7 +31,7 @@ import java.util.Collection;
 
 /**
  * Abstract Class of Bloom Filter contains implemented all basic methods.
- * <p>
+ *
  * A Bloom filter is a space-efficient probabilistic data structure
  * that is used to test whether an element is a member of a set.
  * A query returns either "possibly in set" or "definitely not in set".
@@ -52,15 +52,15 @@ public abstract class AbstractBloomFilter<E> implements BloomFilter<E> {
 
     /**
      * Bloom filter constructor.
-     * <p>
+     *
      * Number of hash functions is estimated from:
      * k = (m/n)ln(2),
      * where k is number of hash functions, m is size of Bloom Filter, n is number of expected elements.
-     * <p>
+     *
      * Bits per element are estimated from:
      * pbs = m/n,
      * where m is size of Bloom Filter, n is number of expected elements.
-     * <p>
+     *
      * Size of Bloom Filter and number of expected elements should be greater than 0.
      *
      * @param size                     size of Bloom Filter.
@@ -83,7 +83,7 @@ public abstract class AbstractBloomFilter<E> implements BloomFilter<E> {
 
     /**
      * Bloom filter constructor.
-     * <p>
+     *
      * Size of Bloom Filter is estimated from:
      * m = (-n*ln(p))/(ln(2))^2,
      * where m is size of Bloom Filter, n is number of expected elements, p is probability of false positives.
@@ -176,9 +176,9 @@ public abstract class AbstractBloomFilter<E> implements BloomFilter<E> {
     /**
      * The createHashes method enables you to create hash functions.
      *
-     * @param bytes
-     * @param numberOfHash
-     * @return
+     * @param bytes        the byte array contains data.
+     * @param numberOfHash number of hash function.
+     * @return int array with result hashes.
      */
     abstract int[] createHashes(byte[] bytes, int numberOfHash);
 
@@ -287,7 +287,7 @@ public abstract class AbstractBloomFilter<E> implements BloomFilter<E> {
     }
 
     /**
-     * The getNumberOfHash method enables you to get long value from created hash.
+     * The getValueFromGeneratedHash method enables you to get int value from created hash.
      *
      * @param data         data to hash.
      * @param hashFunction hash function.
