@@ -36,7 +36,6 @@ import java.util.Collection;
  *
  * @param <E> - the type of elements in this Bloom Filter.
  * @author Damian Stygar
- * @see <www.dahdev.pl>
  */
 public interface BloomFilter<E> extends Serializable {
 

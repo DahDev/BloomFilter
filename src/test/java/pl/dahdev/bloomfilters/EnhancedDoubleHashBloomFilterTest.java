@@ -34,7 +34,6 @@ import java.util.List;
 
 /**
  * @author Damian Stygar
- * @see <www.dahdev.pl>
  */
 public class EnhancedDoubleHashBloomFilterTest {
 

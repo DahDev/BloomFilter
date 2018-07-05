@@ -34,7 +34,6 @@ import java.util.List;
 
 /**
  * @author Damian Stygar
- * @see <www.dahdev.pl>
  */
 public class TripleHashBloomFilterTest {
     private static final double PROBABILITY_OF_FALSE_POSITIVES = 0.001;

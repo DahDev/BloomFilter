@@ -36,7 +36,6 @@ import java.security.NoSuchAlgorithmException;
  *
  * @param <E> - the type of elements in this Bloom Filter.
  * @author Damian Stygar
- * @see <www.dahdev.pl>
  */
 public class EnhancedDoubleHashBloomFilter<E> extends AbstractBloomFilter<E> {
 

@@ -40,7 +40,6 @@ import java.util.Collection;
  * @param <E> - the type of elements in this Bloom Filter.
  *
  * @author Damian Stygar
- * @see <www.dahdev.pl>
  */
 public abstract class AbstractBloomFilter<E> implements BloomFilter<E> {
 

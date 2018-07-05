@@ -35,7 +35,6 @@ import java.util.NoSuchElementException;
 
 /**
  * @author Damian Stygar
- * @see <www.dahdev.pl>
  */
 public class DoubleHashBloomFilterTest {
 
