@@ -1,7 +1,8 @@
 # BloomFilter ![](https://travis-ci.org/DahDev/BloomFilter.svg?branch=master)
 
 A Bloom Filter is a space-efficient probabilistic data structure. 
-Presented solution is implemented in Java. It contains few methods for generating  independent hash functions:
+Presented solution is implemented in Java. Python implementation is available [here](https://github.com/DahDev/BloomFilter-Python).
+It contains few methods for generating  independent hash functions:
 
 - Double Hashing
 - Triple Hashing 
