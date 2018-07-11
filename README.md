@@ -1,4 +1,4 @@
-# BloomFilter ![](https://travis-ci.org/DahDev/BloomFilter.svg?branch=master)
+# BloomFilter ![](https://travis-ci.org/DahDev/BloomFilter-Java.svg?branch=master)
 
 A Bloom Filter is a space-efficient probabilistic data structure. 
 Presented solution is implemented in Java. Python implementation is available [here](https://github.com/DahDev/BloomFilter-Python).
